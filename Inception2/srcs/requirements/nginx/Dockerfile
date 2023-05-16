@@ -10,7 +10,7 @@ RUN mkdir -p /etc/nginx/ssl
 RUN apt-get install -y openssl
 
 # create a directory to store certificates and keys and generate the keys
-RUN openssl req -x509 -nodes -out /etc/nginx/ssl/inception.crt -keyout /etc/nginx/ssl/inception.key -subj "/C=FR/ST=IDF/L=Paris/O=42/OU=42/CN=aboudjel.42.fr/UID=aboudjel"
+RUN openssl req -x509 -nodes -out /etc/nginx/ssl/inception.crt -keyout /etc/nginx/ssl/inception.key -subj "/C=FR/ST=IDF/L=Paris/O=42/OU=42/CN=lunovill.42.fr/UID=lunovill"
 
 # copy the provided config file to the container
 RUN mkdir -p /var/run/nginx
